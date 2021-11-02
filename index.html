@@ -7,16 +7,16 @@
 </head>
 <body>
    <h1>Gästbok</h1>
-   <form method="post" name="guestbook" onsubmit="return submitForm()">
+   <form method="post" name="guestBook" onsubmit="return submitForm()">
     <div>
         <label for="namn">Namn:
             <br>
-        <input type="text" name="namn" placeholder="ange ditt namn" required>
+        <input type="text" name="namn" id="namn" placeholder="ange ditt namn" required>
         </label>
     </div>
     <br>
     <div>
-        <label for="epost">Epost:
+        <label for="epost">E-post:
             <br>
         <input type ="email" name="epost" id="epost" placeholder="ange din epost-adress" required>
         </label>
@@ -42,5 +42,9 @@
 
     <input type="submit" value="Skicka">
     </form>
+
+    <h2>Inlägg</h2>
+    <p id="message"></p>
+    <script src="script.js"></script>
 </body>
 </html>
